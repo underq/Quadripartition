@@ -3,9 +3,9 @@ from math import sqrt
 from PIL import Image
 
 img = Image.open("resources/licorne1.bmp")
-pixels = img.load()
+px = img.load()
 
-def read_pixel(x, y):
+def read_pixel(pixels, x, y):
     """
         Lit un pixels en valeur RGB
 
@@ -15,4 +15,4 @@ def read_pixel(x, y):
     """
     return pixels[x, y]
 
-print read_pixel(2, 2)
+print read_pixel(px, 2, 2)
